@@ -1,0 +1,65 @@
+/* Google font start */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Anton&family=Josefin+Sans&family=Lexend+Deca:wght@100;200;300&family=Livvic:wght@100&family=Montserrat:wght@300&family=Orelega+One&family=Poppins:wght@600&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+body{
+    width: 1440px;
+    font-family: Poppins;
+    background-color: #dfe6e9;
+}
+
+/* Common utilities */
+
+.container{
+    display: flex;
+}
+
+/* Header */
+.header-title{
+    font-size: 24px;
+    padding-left: 135px;
+}
+
+/* Influencer Journey */
+
+.influencer-journey{
+    display: flex;
+    margin-left: 133px;
+}
+.influencer{
+    padding-right: 144px;
+    width: 582px;
+}
+.section-title{
+    font-size: 52px;
+    color: #636e72;
+    transition: 1s  ease-in-out;
+}
+.section-title:hover{
+    color: #2d3436;
+}
+.button{
+    background-color: #636e72;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 41px;
+    padding: 0 8px;
+}
+.camera img{
+    width: 440px;
+    height: 414px;
+}
+
+
+/* Media Query */
+
+/* Phone devices */
+/* @media only screen and (max-width: 360px){
+
+} */
+
+/* Tablet devices */
+/* @media only screen and (min-width: 361px)and (max-width: 988px){
+
+} */
+
