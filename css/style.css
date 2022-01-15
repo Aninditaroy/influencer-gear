@@ -211,7 +211,7 @@ footer{
 /* Media Query For responsive design*/
 
 /* Phone devices  */
-@media only screen and (min-width: 360px) and (max-width: 600px){
+@media only screen and (max-width: 480px){
     body{
         max-width: 100;
     } 
@@ -247,8 +247,45 @@ footer{
     
 } 
 
-/* Tablet devices */
- @media only screen and (min-width: 601px)and (max-width: 988px){
+/* Tablet and larger devices  */
+@media only screen and (min-width: 481px) and (max-width:768px){
+    body{
+        max-width: 100;
+    } 
+    .header-title{
+        font-size: 16px;
+    }
+    .collections, .mores, .follows{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .influencer-journey, .collection, .more, .follow{
+        padding-left: 0;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .influencer, .header-title{
+        max-width: fit-content;
+        text-align: center;
+        padding: 0;
+        margin:0; 
+    }
+    .more-area{
+        max-width: 320px;
+    }
+    .section-title{
+        font-size: 28px;
+    }
+    .camera img{
+        margin-top: 25px;
+    }
+    .button{
+        padding: 0 15px;
+    }
+    
+} 
+
+/* Laptop devices */
+ @media only screen and (min-width: 769px) and (max-width: 1024px){
     header{
         font-size: 16px;
     }
@@ -257,7 +294,7 @@ footer{
     }
     .influencer-journey, .collection, .mores{
         flex-direction: column;
-        /* padding: 0 10px;  */
+        padding: 0 10px;  
     }
     .influencer, .header-title, .more{
         max-width: fit-content;
