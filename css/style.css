@@ -45,11 +45,19 @@ body{
     border-radius: 41px;
     padding: 0 8px;
 }
+.button:hover{
+    padding: 5px 10px;
+    transform: scale(5);
+    transition: transform 0.5s  ease-in-out;
+}
 .camera img{
     width: 440px;
     height: 414px;
 }
-
+.camera img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s  ease-in-out;
+}
 
 /* Media Query */
 
