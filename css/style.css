@@ -13,7 +13,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 310px;
+    padding-bottom: 200px;
 }
 
 /* Header */
@@ -70,9 +70,7 @@ body{
     text-align: center;
     padding-bottom: 30px;
 }
-/* .collection-area{
-    padding-bottom: 100px;
-} */
+
 .collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -93,18 +91,55 @@ body{
 .collection img{
     border-radius: 5px;
 }
-#see-more{
-    position: relative;
-    float: right;
-    color: #2d3436;
-}
 .filled{
     color: #FB8200;;
 }
 .empty{
     color: #b2bec3;
 }
+#see-more{
+    position: relative;
+    float: right;
+    color: #2d3436;
+}
 
+/* Mores */
+.more-title{
+    color: #636e72;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.more-title:hover{
+    color: #2d3436;
+}
+.mores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff38;;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.more img{
+    width: 310px;
+    border-radius: 5px;
+}
+.more img:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
 
 /* Footer */
 
@@ -135,10 +170,13 @@ footer{
     body{
         max-width: 320px;
     }
-    .collections{
+    .header-title{
+        font-size: 16px;
+    }
+    .collections, .mores{
         grid-template-columns: repeat(1,1fr);
     }
-    .influencer-journey, .collection{
+    .influencer-journey, .collection, .more{
         padding-left: 0;
         flex-direction: column;
         padding: 10px 10px;
@@ -149,28 +187,28 @@ footer{
         padding: 0;
         margin:0; 
     }
-    .camera img{
-        margin-top: 25px;
-    }
     .section-title{
         font-size: 28px;
     }
-    .header-title{
-        font-size: 16px;
+    .camera img{
+        margin-top: 25px;
     }
-
+    
 } 
 
 /* Tablet devices */
  @media only screen and (min-width: 601px)and (max-width: 988px){
+    header{
+        font-size: 16px;
+    }
     .collections{
         grid-template-columns: repeat(2,1fr);
     }
-    .influencer-journey, .collection{
+    .influencer-journey, .collection, .mores{
         flex-direction: column;
         /* padding: 0 10px;  */
     }
-    .influencer, .header-title{
+    .influencer, .header-title, .more{
         max-width: fit-content;
         text-align: center;
         padding: 0;
@@ -179,8 +217,6 @@ footer{
     .section-title{
         font-size: 28px;
     }
-    header{
-        font-size: 16px;
-    }
+    
 }
 
