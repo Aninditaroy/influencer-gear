@@ -179,7 +179,7 @@ body{
 
 #follow-more-id{
     position: relative;
-    float: right;
+    float: left;
     color: #2d3436;
     text-decoration: none;
     margin-top: 15px;
