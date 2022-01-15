@@ -11,12 +11,14 @@ body{
 
 .container{
     display: flex;
+    justify-content: center;
+    padding-bottom: 310px;
 }
 
 /* Header */
 .header-title{
     font-size: 24px;
-    padding-left: 135px;
+    padding-left: 155px;
 }
 
 /* Influencer Journey */
@@ -59,6 +61,47 @@ body{
     transition: transform 0.5s  ease-in-out;
 }
 
+/* Collections */
+
+.collection-title{
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.collection-area{
+    padding-bottom: 30px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff38;;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.collection img{
+    border-radius: 5px;
+}
+#see-more{
+    position: relative;
+    float: right;
+    color: #2d3436;
+}
+.filled{
+    color: #FB8200;;
+}
+.empty{
+    color: #b2bec3;
+}
 /* Media Query */
 
 /* Phone devices */
