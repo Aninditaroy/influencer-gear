@@ -124,21 +124,28 @@ body{
 .more{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff38;;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    background-color: #ffffff38;
+
+    
 }
 .more img{
     width: 310px;
+    height: 100%;
     border-radius: 5px;
 }
 .more img:hover{
     transform: scale(1.2);
     transition: transform 1s ease-in-out;
+}
+#see-more-id{
+    position: relative;
+    float: right;
+    color: #2d3436;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border-radius: 41px;
+    margin-top: 15px;
+    padding: 0 8px;
 }
 
 /* Footer */
