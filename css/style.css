@@ -16,10 +16,21 @@ body{
     padding-bottom: 200px;
 }
 
+
 /* Header */
 .header-title{
     font-size: 24px;
     padding-left: 125px;
+}
+nav > ul{
+    
+}
+nav{
+    display: flex;
+    list-style: none;
+}
+.nav-menu{
+
 }
 
 /* Influencer Journey */
@@ -148,6 +159,43 @@ body{
     padding: 0 8px;
 }
 
+
+/* Follows */
+.follow-title{
+    color: #636e72;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.follow-title:hover{
+    color: #2d3436;
+}
+.follows{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+}
+.follow img{
+    width: 380px;
+    height: 315px;
+}
+
+#follow-more-id{
+    position: relative;
+    float: right;
+    color: #2d3436;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
 /* Footer */
 
 footer{
@@ -170,7 +218,7 @@ footer{
 }
 
 
-/* Media Query */
+/* Media Query For responsive design*/
 
 /* Phone devices  */
 @media only screen and (min-width: 360px) and (max-width: 600px){
@@ -180,10 +228,10 @@ footer{
     .header-title{
         font-size: 16px;
     }
-    .collections, .mores{
+    .collections, .mores, .follows{
         grid-template-columns: repeat(1,1fr);
     }
-    .influencer-journey, .collection, .more{
+    .influencer-journey, .collection, .more, .follow{
         padding-left: 0;
         flex-direction: column;
         padding: 10px 10px;
@@ -199,6 +247,9 @@ footer{
     }
     .camera img{
         margin-top: 25px;
+    }
+    .button{
+        padding: 0 15px;
     }
     
 } 
