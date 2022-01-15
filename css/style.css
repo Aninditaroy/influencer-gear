@@ -102,6 +102,28 @@ body{
 .empty{
     color: #b2bec3;
 }
+
+
+/* Footer */
+
+footer{
+    background-color: #2d3436;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 589px;
+}
+.influencer-product h4{
+    font-size: 14px;
+}
+.fab{
+    align-self: center;
+    font-size: 20px;
+    margin: 0px 16px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+
 /* Media Query */
 
 /* Phone devices */
